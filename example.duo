@@ -1,3 +1,0 @@
-console = $"libduo-console.so"
-
-console.write @ "Hello, World!\n"
