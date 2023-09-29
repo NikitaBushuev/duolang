@@ -24,6 +24,9 @@ OBJS := $(patsubst %.c, %.o, $(SRCS))
 all: duo
 	./$< examples/example.duo
 
+clean:
+	$(RM) $(OBJS)
+
 duo: $(OBJS)
 	$(CC) -o $@ $(CFLAGS) $^
 
