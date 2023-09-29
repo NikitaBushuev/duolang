@@ -9,3 +9,4 @@
 
 #include <duo/opcode.h>
 #include <duo/operator.h>
+#include <duo/state.h>
