@@ -12,9 +12,7 @@ CFLAGS += $(addprefix -I, $(INCLUDE_DIRECTORIES))
 
 YFLAGS += -d
 
-SRCS := $(shell find $(SRCDIR) -name "*.c")
-SRCS += $(SRCDIR)/duo/y.tab.o $(SRCDIR)/duo/lex.yy.o
-
+SRCS := $(wildcard $(SRCDIR)/*.c) $(SRCDIR)/y.tab.c $(SRCDIR)/lex.yy.c
 OBJS := $(patsubst %.c, %.o, $(SRCS))
 
 .SUFFIXES:
